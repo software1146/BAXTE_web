@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAXTE Official Team Page</title>
+    
+    <!-- Internal CSS for styling -->
+    <style>
+        /* General Page Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #333, #555);
+            color: #fff;
+            padding: 20px 10%;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 5px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        /* Team Member Cards */
+        .team-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #ddd;
+        }
+
+        .team-member h3 {
+            margin: 15px 0 5px;
+            font-size: 1.5em;
+            color: #555;
+        }
+
+        .team-member p {
+            font-size: 1em;
+            color: #777;
+        }
+
+        /* Project List */
+        .project-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project-item {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            width: 350px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.8em;
+            color: #444;
+        }
+
+        .project-item p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 10%;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Form */
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form div {
+            margin-bottom: 15px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Social Media Links */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        ul li a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>BAXTE</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#team">Our Team</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are BAXTE, a forward-thinking team dedicated to developing innovative AI solutions and helpful tools for personal computing.<br>
+            We focus on creating technology that enhances everyday life and making positive contributions to the world. <br>
+            Our mission is to build AI-driven applications, tools, and even games that provide meaningful support, such as Peace Mind.<br>
+            At BAXTE, we are committed to pushing the boundaries of what technology can achieve, ensuring our products make a positive impact on society.</p>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Jung Hye-Seong</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Kim Do-Hyeon</h3>
+                <p>Project Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Baek Sang-Ha</h3>
+                <p>Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Peace Mind</h3>
+                <p>An AI-powered mental health assistant that provides personalized stress relief techniques and mindfulness exercises.</p>
+            </div>
+            <div class="project-item">
+                <h3>April April Squared</h3>
+                <p>An interactive tribute to the Sewol Ferry disaster, combining storytelling, puzzles, and virtual memorials to honor victims and promote understanding.</p>
+            </div>
+            <div class="project-item">
+                <h3>???</h3>
+                <p>We can't tell you yet. 😎</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you'd like to work with us, feel free to reach out via our email: <a href="mailto:info@baxte.com">info@baxte.com</a></p>
+        <p> or connect with us on social media:</p>
+        <ul>
+            <li><a href="https://twitter.com/YourTwitterHandle" target="_blank">Twitter</a></li>
+            <li><a href="https://facebook.com/YourFacebookPage" target="_blank">Facebook</a></li>
+            <li><a href="https://linkedin.com/company/YourLinkedInProfile" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 BAXTE. All rights reserved. <a href="mailto:info@baxte.com">Contact Us</a></p>
+    </footer>
+
+    <!-- Internal JavaScript for interactions -->
+    <script>
+        // Simple script to handle navigation link click smooth scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('href').substring(1);
+                const section = document.getElementById(sectionId);
+                window.scrollTo({
+                    top: section.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
